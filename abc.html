@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product List Management</title>
+    <link rel="stylesheet" href="code.css">
+    <script type="text/javascript" src="abc.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div class="intro">
+            <h1><img src="abc.JPG">Công Tâm</h1>
+            <h2>Any phone on the planet</h2>
+        </div>
+        <div id="main1">
+            <p>Add New Product</p>
+            <div class="add_product">
+                <input type="text" name="productAdd" id="productAdd" placeholder="New Product" onfocus="this.value=''">
+                <button type="button" id="addbtn" onclick="addProductToList()">Add</button>
+            </div>
+            <p>Display All Products</p>
+            <div class="productDisplay" id="productDisplay">
+                <table class="table" rules=none>
+                    <thead class="list">
+                        <tr>
+                            <th id="abc" colspan="2"> Product Names:</th>
+                            <th id="productCount" colspan="2"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="result">
+                    </tbody>
+                </table>
+            </div>
+            <script src="app.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
